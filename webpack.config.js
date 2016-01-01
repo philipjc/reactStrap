@@ -5,7 +5,7 @@ var webpack = require('webpack');
 
 var config = {
   context: path.join(__dirname,  '/app'),
-  entry: 'App.js',
+  entry: 'Main.js',
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'bundle.js'
