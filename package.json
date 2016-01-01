@@ -10,9 +10,10 @@
   "author": "philipjc <philipcox83@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "history": "1.17.0",
     "react": "0.14.2",
     "react-dom": "0.14.2",
-    "react-router": "0.13.5"
+    "react-router": "1.0.3"
   },
   "devDependencies": {
     "babel": "6.0.15",
