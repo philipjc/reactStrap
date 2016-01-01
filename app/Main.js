@@ -28,7 +28,7 @@ function renderPage() {
   render((
     <Router>
       <Route path="/" component={App} >
-        <Route path='/about' component={About} />
+        <Route path='about' component={About} />
       </Route>
     </Router>
   ), document.querySelector('.app-container'))
