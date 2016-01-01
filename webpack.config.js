@@ -6,10 +6,10 @@ var webpack = require('webpack');
 var config = {
   context: path.join(__dirname,  '/app'),
   entry: 'Main.js',
+  devtool: 'source-map',
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js',
-    devtool: 'source-map'
+    filename: 'bundle.js'
   },
 
   resolve: {

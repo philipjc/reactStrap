@@ -16,9 +16,10 @@ if (ON_TEST) {
 
 function createContainer(cb) {
   let body = document.querySelector('body');
+  let script = document.querySelector('script');
   let appContainer = document.createElement('div');
   appContainer.classList.add('app-container');
-  document.body.appendChild(appContainer);
+  body.insertBefore(appContainer, script);
 
   cb();
 };
