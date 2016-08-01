@@ -14,15 +14,15 @@ if (ON_TEST) {
 };
 
 
-function createContainer(cb) {
-  let body = document.querySelector('body');
-  let script = document.querySelector('script');
-  let appContainer = document.createElement('div');
-  appContainer.classList.add('app-container');
-  body.insertBefore(appContainer, script);
-
-  cb();
-};
+// function createContainer(cb) {
+//   let body = document.querySelector('body');
+//   let script = document.querySelector('script');
+//   let appContainer = document.createElement('div');
+//   appContainer.classList.add('app-container');
+//   body.insertBefore(appContainer, script);
+//
+//   cb();
+// };
 
 
 function renderPage() {
@@ -35,7 +35,8 @@ function renderPage() {
 
       </Route>
     </Router>
-  ), document.querySelector('.app-container'))
+  ), document.querySelector('.app'))
 };
 
-createContainer(renderPage);
+// createContainer(renderPage);
+renderPage();

@@ -42,7 +42,9 @@ var config = {
     new webpack.HotModuleReplacementPlugin(),
 
     new HtmlwebpackPlugin({
-      title: 'setup'
+      title: 'React setup',
+      template: './templates/index.html',
+      inject: 'body'
     }),
 
     // env variables we want resolved in out code
