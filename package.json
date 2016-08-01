@@ -1,7 +1,7 @@
 {
-  "name": "new-drb",
+  "name": "reactstrap",
   "version": "1.0.0",
-  "description": "website",
+  "description": "react bootstrap",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -13,7 +13,10 @@
     "history": "3.0.0",
     "react": "15.3.0",
     "react-dom": "15.3.0",
-    "react-router": "2.6.1"
+    "react-redux": "^4.4.5",
+    "react-router": "2.6.1",
+    "redux": "^3.5.2",
+    "requirejs": "^2.2.0"
   },
   "devDependencies": {
     "babel": "6.5.2",

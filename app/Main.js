@@ -14,29 +14,17 @@ if (ON_TEST) {
 };
 
 
-// function createContainer(cb) {
-//   let body = document.querySelector('body');
-//   let script = document.querySelector('script');
-//   let appContainer = document.createElement('div');
-//   appContainer.classList.add('app-container');
-//   body.insertBefore(appContainer, script);
-//
-//   cb();
-// };
-
-
 function renderPage() {
   render((
     <Router history={browserHistory}>
       <Route path="/" component={App} >
         <Route path='/home' component={Home} />
-        <Route path='about' component={About} />
-        <Route path='services' component={Services} />
+        <Route path='/about' component={About} />
+        <Route path='/services' component={Services} />
 
       </Route>
     </Router>
   ), document.querySelector('.app'))
 };
 
-// createContainer(renderPage);
 renderPage();
