@@ -1,3 +1,5 @@
+import './styles/main.scss';
+
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
@@ -7,6 +9,9 @@ import Home from './views/Home.jsx';
 import About from './views/About.jsx';
 import Services from './views/Services.jsx';
 
+import store from './stores/store';
+
+console.log(store.getState());
 
 if (ON_TEST) {
   // run test code, mocks etc

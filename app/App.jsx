@@ -16,9 +16,10 @@ class App extends React.Component {
    console.log(this.props);
    return (
      <div>
-       <Header title="ES2015, Webpack, React, Istanbul, Karma, Jasmine, React Router, Redux" />
+       <Header title="ES2015, Webpack, React, React-router, Redux, Istanbul, Karma, Jasmine" />
        <div className="">
          <ul>
+          <li><Link to='/'>App</Link></li>
           <li><Link to='/home'>Home</Link></li>
           <li><Link to='/about'>About</Link></li>
           <li><Link to='/services'>Services</Link></li>

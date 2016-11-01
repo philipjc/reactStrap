@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ColorChanger from '../components/home/ColorChanger.jsx';
+
 const propTypes = {
 
 };
@@ -13,8 +15,13 @@ class Home extends React.Component {
   }
 
  render() {
+   const colors = ['red', 'blue', 'green', 'brown'];
+
    return(
-     <div className="">Home Page</div>
+     <div>
+       <div className="">Home Page</div>
+       <ColorChanger colors={colors} />
+     </div>
    )
  }
 };

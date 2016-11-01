@@ -19,14 +19,21 @@ var config = {
   },
 
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loader: 'babel',
-      query: {
-        presets: ['react', 'es2015']
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015']
+        },
+        include: path.join(__dirname, 'app')
       },
-      include: path.join(__dirname, 'app')
-    }]
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass'],
+        include: path.resolve(__dirname, 'app')
+      }
+    ]
   },
 
   devServer: {
@@ -42,7 +49,6 @@ var config = {
     new webpack.HotModuleReplacementPlugin(),
 
     new HtmlwebpackPlugin({
-      title: 'React setup',
       template: './templates/index.html',
       inject: 'body'
     }),

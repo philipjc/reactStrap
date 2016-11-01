@@ -1,1 +1,8 @@
-Bootstrap a React app, with Webpack and Jasmine testing.
+###Bootstrap a React + Redux project
+
+* React
+* Redux
+* React Router
+* Jasmine
+* Webpack
+* ES2015
