@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "babel": "6.5.2",
+    "babel-cli": "^6.18.0",
     "babel-core": "6.18.0",
     "babel-loader": "6.2.7",
     "babel-preset-es2015": "6.18.0",
@@ -38,6 +39,8 @@
     "karma-webpack": "1.8.0",
     "mocha": "3.1.2",
     "phantomjs": "2.1.7",
+    "phantomjs-prebuilt": "^2.1.13",
+    "requirejs": "^2.3.2",
     "webpack": "1.13.3",
     "webpack-core": "0.6.8",
     "webpack-dev-server": "1.16.2"
